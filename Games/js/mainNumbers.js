@@ -30,4 +30,15 @@ function onKeyPress(event){
     }
 }
 
+function fade(button) {
+    if (button.value === "FadeOut") {
+        document.getElementById("textError").className = "fade-out";
+        button.value = "FadeIn";
+    }
+    else {
+        document.getElementById("textError").className = "fade-in";
+        button.value = "FadeOut";
+    }
+}
+
 inputEnter.addEventListener("keypress", onKeyPress);

@@ -51,6 +51,22 @@ a:hover{
   color:black;
 }
 
+#textError{
+  color: tomato;
+  font-size: 2rem;
+  -webkit-transition: opacity 2s ease-in;
+  -moz-transition: opacity 2s ease-in;
+  -o-transition: opacity 2s ease-in;
+}
+
+#textError.fade-out{
+  opacity: 0;
+}
+
+#textError.fade-in{
+  opacity: 1;
+}
+
 .button{
   border: 5px solid white;
   background-color: yellow;

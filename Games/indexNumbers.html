@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport">
     <title>Java-daba-doos</title>
-    <link rel="shortcut icon" href="img/LOGO.png">
+    <link rel="shortcut icon" href="./img/LOGO.png">
     <link href="https://fonts.googleapis.com/css?family=Caesar+Dressing|Roboto+Condensed" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
 
   <body>
     <header>
-      <img class="logo" src="img/LOGO.png" alt="Logotipo Java-daba-dooS" class="logotype">
+      <img class="logo" src="./img/LOGO.png" alt="Logotipo Java-daba-dooS" class="logotype">
       <ul>
         <li><a class="menu" href="../index.html"> Menú</a></li>
       </ul>
@@ -19,22 +19,16 @@
 
     <div class="container">
       <h1>Juego de adivinar el número</h1>
-
       <div class="fieldset">
         <label class="">Escribe un numero entre el 1 y el 100</label>
-      
-          <input class="input" type="number" name="number" value="" class="menuNumbers">
-          <button id="button" class="button" type="button" name="button" onclick= "gameNumber()">¡Dale caña!</button>
-          <p class="textError" id="textError" ></p>
-          <audio id="audioJava" src="audio/audio.mp3" ></audio>
-      
-
+        <input class="input" type="number" name="number" value="" class="menuNumbers">
+        <button id="button" class="button" type="button" name="button" value="FadeOut" onclick= "gameNumber();fade(button)">¡Dale caña!</button>
+        <p class="textError" id="textError" ></p>
+        <audio id="audioJava" src="./audio/audio.mp3" ></audio>
       </div>
-        
     </div>
 
-  <footer><label for="">Desarrollado por las Java-daba-dooS team para el segundo sprint by <a href="http://adalab.es/">Adalab</a></label></footer>
-  
-      <script src="js/mainNumbers.js" charset="utf-8"></script>
+    <footer><label for="">Desarrollado por las Java-daba-dooS team para el segundo sprint by <a href="http://adalab.es/">Adalab</a></label></footer>
+    <script src="./js/mainNumbers.js" charset="utf-8"></script>
   </body>
 </html>
